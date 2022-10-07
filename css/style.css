@@ -1,0 +1,488 @@
+
+/* --------------------------Parameters----------------------------- */
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+    padding: 15px;
+    
+}
+body{
+    background: #2A2626;
+}
+
+
+
+
+
+/* -----------------------Section 1 Header ----------------------- */
+
+
+
+#header{
+    background: #232020;
+    z-index: 2;
+    
+}
+.logo{
+    width: 160px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    background: #760FF8;
+    border:none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+}
+.header_bg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 30px; 
+}
+
+
+/* -----------------Burger Menu---------------------- */
+
+
+
+.burgerL{
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+}
+.burgerI:first-child{
+    width: 35px;
+    border-top: 3px solid white;
+}
+.burgerI:nth-child(2){
+    margin:5px 0;
+    width: 35px;
+    border-top: 3px solid white;
+}
+.burgerI:nth-child(3){
+    width: 35px;
+    border-top: 3px solid white;
+}
+.menuI{
+    display: none;
+    position: absolute;
+    display: none;
+    background:#211616;
+    padding: 18px 10px 18px 40px;
+    right: 0;
+}
+.menuI a{
+    font-family: 'Montserrat', sans-serif;
+    color: #F5EBEB;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 23px;
+    margin-right: 20px;
+}
+
+/* ----------------animation--------------------------- */
+.header a{
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+}
+.header a:hover{
+    color: #4CF80F;
+    margin-top: -3px;
+}
+
+.logo{
+    animation: logo 2s ease-in-out infinite;
+    -webkit-animation: logo 2s ease-in-out infinite;
+}
+
+@keyframes logo {
+    0% , 100%{
+        color: wheat;
+    }
+    30%{
+        color: #4CF80F;
+        background-color: rgb(60, 41, 6) ;
+    }
+    50%{
+        color: orange;
+        background: #000;
+    }
+}
+
+    
+
+
+
+
+
+
+
+/* ------------------------Section 2 Wellcome ---------------------------------- */
+
+
+
+
+
+
+.wellcome{
+    margin-top: -15px;
+    background: url('../img/photo1664993640.jpeg');
+}
+.wellcome_gen{
+    width: auto;
+    padding: 50px;
+    background: #2A2626; 
+    margin-right: 5%;
+    margin-left: 100px;
+    margin-top: 10%;
+    margin-bottom: 80px;
+    font-family: Mantserrat, san-serif;
+    background:rgba(54, 25, 25, .8);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.wellcome_title{
+    font-weight: 500;
+    color: aliceblue;
+}
+.wellcome_text{
+    color: aliceblue;
+    font-size: 20px;
+    opacity: .9;
+    font-weight: 300;
+}
+.wellcome_btn{
+    font-size: 23px;
+    width: 180px;
+    height: 45px;
+    background: #4CF80F;
+    font-weight: 800;
+    font-family: Mantserrat, sans-serif;
+    border: none;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+}
+
+/* ------------------animation-------------------- */
+
+
+.wellcome_btn:hover{
+    background: #000;
+    color: #4CF80F;
+    margin-top: -10px;
+    box-shadow: 4px 3px 10px 3px #4CF80F,
+    4px 3px 15px 10px #4CF80F;
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------- Section 3 About-------------------------- */
+
+
+
+
+
+.about{
+    font-family: Mantserrat, sans-serif;
+    color: aliceblue;
+    
+}
+
+
+.title{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 30px;
+    background: #760FF8;
+    padding: 15px;
+    border-radius: 40px;
+    -webkit-border-radius:40px;
+    -moz-border-radius:40px;
+    -ms-border-radius:40px;
+    -o-border-radius:40px;
+    margin-bottom: 40px;
+    margin-top: 60px;
+}
+.about_1{
+    display: flex;
+    align-items: center;
+}
+.about_1 h2{
+    color: aliceblue;   
+    font-weight: 600;
+}
+.list li{
+    color: aliceblue;
+}
+.about_1_endtitle{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+/* ---------------------Section 4 Accordion-------------------- */
+
+
+
+
+
+.accordion{
+    max-width: 500px;
+    margin-bottom: 70px;
+}
+
+
+
+
+/* -----------------------Section 5 Contact ------------------------ */
+
+
+
+
+.contact{
+    margin-bottom: 100px;
+}
+.contact1 img{
+    width: 70px;
+}
+.contitle{
+    background:#4CF80F;
+    color: #000;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+}
+.contact2 img{
+    width: 50px;
+}
+.contact3 img{
+    width: 70px;
+}
+.contact img{
+    margin-right: 30px;
+}
+
+/* ----------------animation----------------------- */
+.contitle:hover{
+    background: #000;
+    color: #4CF80F;
+    margin-top: -10px;
+    box-shadow: 4px 4px 10px 4px #4CF80F,
+    4px 4px 15px 10px #4CF80F;
+}
+
+
+
+
+/* ----------------------------Section 6 Footer ---------------------- */
+
+
+
+
+#footer{
+    background: #232020;
+    
+}
+.footer{
+    padding: 25px  10%;
+}
+.footer p{
+    font-family: Montserrat,sans-serif;
+    color: #F5EBEB;
+    font-weight: 200;
+}
+.footer2{
+    margin-top: 60px;
+    font-family: Montserrat,sans-serif;
+    color: #F5EBEB;
+    font-weight: 200;
+}
+.map1{
+    max-width: 70%;
+    margin-bottom: 50px;
+}
+.li{
+    text-decoration: none;
+    font-family: Montserrat,sans-serif;
+    color: #F5EBEB;
+    font-weight: 200;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+}
+
+.footer1 p{
+    font-size: 25px;
+}
+
+/* ------------------animation---------------------- */
+
+
+.li:hover{
+    color: #4CF80F;
+    font-weight: 600;
+}
+
+
+/* --------------------Media Adaptive----------------------- */
+
+
+
+
+
+@media screen and (max-width: 767px){
+    .deskMenu{
+        display: none;
+    }
+    .burgerL{
+        display: flex;
+        flex-direction: column;
+    }
+    .wellcome_gen{
+        margin-left: 10px;
+    }
+    .contact_img{
+        display: none;
+    }
+    .contitle{
+        background:#4CF80F;
+        color: #232020;
+    }
+    .footer1{
+        text-align: center;
+    }
+    .footer2{
+        text-align: center;
+    }
+    .about_1{
+        display: block;
+        text-align: center;
+        justify-content: center;
+    }
+    .list li{
+        list-style: none;
+    }
+    .li{
+        list-style: none;
+    }
+    .ul{
+        margin-right: 3 0px;
+    }
+    .list li:first-child{
+        margin-top: 30px;
+    }
+    .logo{
+        width: 120px;
+        height: auto;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        font-size: 25px;
+    }
+}
+
+
+
+@media screen and (max-width: 650px){
+    .contact{
+        margin-bottom: 30px;
+    }
+    .contitle{
+       font-size: 20px; 
+    }
+    .accordion{
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 575px){
+    .title{
+        font-size: 20px;
+    }
+    .about_1_endtitle{
+       font-size: 20px;
+    }
+    
+    
+}
+
+
+
+
+@media screen and (max-width: 515px){
+    .wellcome_gen{
+        margin:0;
+        padding: 50px 15px;
+    }
+    .contitle{
+        font-size: 30px;
+    }
+    .footer2{
+        font-size: 12px;
+    }
+    .wellcome_title{
+        margin-top: 90px;
+    }
+
+}
+
+@media screen and (max-width: 475px){
+    .menuI{
+        left:10px;
+    }
+}
+
+@media screen and (max-width: 406px){
+    
+    .menuI a{
+        font-size: 17px;
+
+    }
+
+}
