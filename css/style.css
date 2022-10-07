@@ -140,7 +140,7 @@ body{
 
 .wellcome{
     margin-top: -15px;
-    background: url('../img/photo1664993640.jpeg');
+    background: url("../img/photo1664993640.jpeg");
 }
 .wellcome_gen{
     width: auto;
